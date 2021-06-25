@@ -23,6 +23,7 @@ html,body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
 	color: #575373;
+	cursor: pointer;
 
 	display: inline-block;
 	list-style: none;
@@ -97,7 +98,7 @@ main,article,h2,p,div,img,footer {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .imagenes .div {
@@ -121,6 +122,7 @@ main,article,h2,p,div,img,footer {
 }
 
 .imagenes .div img {
+	cursor: pointer;
 	width: 278px;
 	height: 275px;
 	justify-content: center;
@@ -135,6 +137,8 @@ main,article,h2,p,div,img,footer {
 }
 
 .imagenes .cora {
+	cursor: pointer;
+	box-shadow: 0px 4px 18px #000000;
 	border-radius: 50px;
 	width: 60px;
 	height: 60px;
@@ -144,6 +148,7 @@ main,article,h2,p,div,img,footer {
 }
 
 .imagenes .zones img {
+	cursor: pointer;
 	width: 36px;
 	height: 43px;
 	margin-top: 10px;
@@ -154,7 +159,7 @@ main,article,h2,p,div,img,footer {
 .main .casi {
 	width: 100%;
 	height: 460px;
-	margin-top: 80px;
+	margin-top: 110px;
 	margin-left: 30px;
 
 	display: flex;
@@ -164,6 +169,7 @@ main,article,h2,p,div,img,footer {
 }
 
 .casi img {
+	cursor: pointer;
 	width: 449px;
 	height: 460px;
 }
@@ -176,7 +182,7 @@ main,article,h2,p,div,img,footer {
 	font-weight: bold;
 }
 
-.casi  .pa2 {
+.casi .pa2 {
 	margin-top: 10px;
 	margin-left: 30px;
 	color: #575373;
@@ -198,6 +204,8 @@ main,article,h2,p,div,img,footer {
 }
 
 .casi1 img {
+	cursor: pointer;
+	margin-left: 30px;
 	width: 449px;
 	height: 460px;
 }
@@ -210,6 +218,7 @@ main,article,h2,p,div,img,footer {
 }
 
 .casi1 .pa3 {
+	margin-top: 10px;
 	color: #575373;
 	font-size: 26px;
 	font-family: sans-serif;
@@ -232,4 +241,130 @@ footer .fot {
 	font-family: sans-serif;
 	color: #342F2F;
 	margin-bottom: 10px;
+	cursor: pointer;
 }
+
+@media(max-width: 800px) {
+
+	body {
+		width: 100%;
+	}
+
+	.menu  {
+		height: 150px;
+		text-align: center;
+	}
+
+	.menu li {
+		font-size: 25px;
+		display: inline-block;
+		margin-left: -6px;
+	}
+	
+	.titulo {
+		height: 100px;
+		margin-top: -60px;
+	}
+
+	.titulo h1 {
+		font-size: 45px;
+	}
+
+	.main .article {
+		flex-direction: column;
+		margin-top: -90px;
+	}
+
+	.main .article .p1 {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.main .article .p2 {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 65px;
+	}
+
+	.imagenes {
+		margin-top: -35px;
+		margin-left: -5px;
+		flex-direction: column;
+	}
+
+	.imagenes .div {
+		width: 400px;	
+		height: 100%;
+		margin-bottom: 40px;
+
+	}
+
+	.imagenes .div  .titu {
+		font-size: 40px;
+	} 
+
+	.imagenes .cora {
+		position: absolute;
+		margin-right: 70px;
+		
+	}
+
+	.main .casi {
+		width: 500px;
+		margin: 500px;
+		margin-top: 35px;
+		text-align: center;
+
+		display: inline-block;	
+		flex-wrap: wrap;
+	}
+
+	.main .casi img {
+		width: 530px;
+		margin-bottom: 40px;
+		margin-left: -15px;
+	}
+
+	.main .casi .pa {
+		margin-left: -2px;
+		font-size: 23px;
+	}
+
+	.main .casi .pa2 {
+		margin-top: 50px;
+		margin-left: -2px;
+		font-size: 23px;
+	}
+
+	.main .casi1 {
+		width: 500px;
+		height: 500px;
+		margin: 500px;
+		text-align: center;
+
+		display: inline-block;	
+		flex-wrap: wrap;
+	}
+
+	.main .casi1 img {
+		width: 530px;
+		margin-top: -390px;
+		margin-bottom: 40px;
+		margin-left: -15px;
+	}
+
+	.main .casi1 .pa1 {
+		margin-left: -2px;
+		font-size: 23px;
+	}
+
+	.main .casi1 .pa3 {
+		margin-top: 50px;
+		margin-left: -2px;
+		font-size: 23px;
+	}
+ 
+	footer {
+		margin-top: -300px;
+	}
